@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+
 .body{
     font-family: 'Ubuntu', sans-serif;
 }
+
+/* Title */
+
 #title{
     background-color: #ff4c68;
     color: #fff;
-    height: 600px;
 }
 #navname{
     margin-left: 1% ;
@@ -83,8 +88,6 @@ p{
     text-align: center;
     background-color: #ef8172;
     color: #fff;
-    position: relative;
-    z-index: 2;
 }
 h2{
     font-family: 'Roboto Slab', serif;
@@ -124,18 +127,46 @@ h2{
 .title-image-div{
     position: relative;
 }
+#footer{
+    background-color: #fff;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    height: 150px;
+}
+#copyright{
+    margin-top: 60px;
+}
+
 #cta{
     background-color: #ff4c68;
-    text-align: center;
     color: #fff;
-    padding: 20px;
-}
-#footer{
-    background-color: #ff4c68;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 900;
     text-align: center;
-    color: #000;
-    padding-bottom: 20px;
+    padding: 5% 15%;
 }
-.copyr{
-    color: #fff;
+.cta-downlaod-button{
+    padding-bottom: 3% ;
+}
+.footer-links{
+    color: black;
+    padding: 10px;
+    position: relative;
+    top: 40%;
+}
+.footer-icons:hover{
+    color: grey;
+}
+
+/* Media query */
+
+@media (max-width: 995px) {
+    #title{
+        text-align: center;
+    }
+
+    .title-image{
+        position: static;
+        transform: rotate(0);
+    }
 }
